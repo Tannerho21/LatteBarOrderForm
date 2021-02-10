@@ -14,6 +14,10 @@ app.get('/orderForm', (req, res) => {
 app.get('/currentOrders', (req, res) => {
   res.sendFile(__dirname + '/currentOrders.html')
 })
+
+app.get('/thankyou', (req, res) => {
+  res.sendFile(__dirname + '/thankyou.html')
+})
 app.listen(port, () => {
   console.log(`latte app listening at http://localhost:${port}`)
 })
