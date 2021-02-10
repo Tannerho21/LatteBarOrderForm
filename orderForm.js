@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 
 app.get('/orderForm', (req, res) => {
-  res.send('Testing')
+  res.sendFile(__dirname + '/orderForm.html')
 })
 
 app.listen(port, () => {
